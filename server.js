@@ -91,3 +91,18 @@ const port = 5000;
 app.listen(port, ()=>{
     console.log('server is up on port to 5000');
 })
+
+const express = require('express');
+const route = express();
+
+route.use(express.json())
+
+const PORT = 4000;
+
+route.get('/login', (req, res)=>{
+    res.send({status:1, msg:"login page api"})
+})
+
+route.listen(PORT, ()=>{
+    console.log('server is running on port 4000')
+});
