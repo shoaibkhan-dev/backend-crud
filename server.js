@@ -100,7 +100,15 @@ route.use(express.json())
 const PORT = 4000;
 
 route.get('/login', (req, res)=>{
-    res.send({status:1, msg:"login page api"})
+    console.log(req.body)
+    res.send({status:1, msg:"login page api",
+        bodyyData: req.body,
+        queryData: req.body
+    })
+})
+
+route.post('product', (req, res)=>{
+    res.send({status: 2, msg: 'product page api'})
 })
 
 route.listen(PORT, ()=>{
