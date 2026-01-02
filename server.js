@@ -115,4 +115,4 @@ route.listen(PORT, ()=>{
     console.log('server is running on port 4000')
 });
 
-app.listen(9000);
+route.listen(9000);
