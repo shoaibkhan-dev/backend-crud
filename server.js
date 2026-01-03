@@ -107,6 +107,8 @@ route.get('/login', (req, res)=>{
     })
 })
 
+let token = "12345"
+
 route.post('product', (req, res)=>{
     res.send({status: 2, msg: 'product page api'})
 })
