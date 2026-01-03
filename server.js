@@ -108,6 +108,13 @@ route.get('/login', (req, res)=>{
 })
 
 let token = "12345"
+const muToken = (req, res, next) => {
+    if(res.token == ""){
+        return res.send({
+            status:1, msg:'welcome'
+        })
+    }
+}
 
 route.post('product', (req, res)=>{
     res.send({status: 2, msg: 'product page api'})
