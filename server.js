@@ -114,6 +114,7 @@ const muToken = (req, res, next) => {
             status:1, msg:'welcome'
         })
     }
+    next()
 }
 
 route.post('product', (req, res)=>{
