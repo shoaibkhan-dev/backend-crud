@@ -123,7 +123,7 @@ route.post('product', (req, res)=>{
 })
 
 route.listen(PORT, ()=>{
-    console.log('server is running on port 4000')
+    console.log('server is running on port 9000')
 });
 
 route.listen(9000);
