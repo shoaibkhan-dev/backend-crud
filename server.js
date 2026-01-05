@@ -133,8 +133,14 @@ const express = require('express');
 
 const appss = express()
 
+const Port = (8000)
+
 app.use(express.json)
 
 app.get('/news', (req, res)=>{
     res.send({status: 1, msg: 'news page api'})
+})
+
+appss.listen(Port, ()=>{
+    console.log("server is running on 8000")
 })
