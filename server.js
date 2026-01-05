@@ -142,7 +142,7 @@ app.get('/news', (req, res)=>{
 })
 
 app.post('/login', (req, res)=>{
-    
+    res.send({status:1, msg: "login page api"})
 })
 
 appss.listen(Port, ()=>{
