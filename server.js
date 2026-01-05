@@ -127,3 +127,14 @@ route.listen(PORT, ()=>{
 });
 
 route.listen(9000);
+
+
+const express = require('express');
+
+const appss = express()
+
+app.use(express.json)
+
+app.get('/news', (req, res)=>{
+    res.send({status: 1, msg: 'news page api'})
+})
