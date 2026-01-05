@@ -141,6 +141,10 @@ app.get('/news', (req, res)=>{
     res.send({status: 1, msg: 'news page api'})
 })
 
+app.post('/login', (req, res)=>{
+    
+})
+
 appss.listen(Port, ()=>{
     console.log("server is running on 8000")
 })
