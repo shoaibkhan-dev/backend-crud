@@ -141,7 +141,7 @@ const Token = '123456'
 
 app.get('/news', (req, res)=>{
     console.log(req.body)
-    res.send({status: 1, msg: 'news page api', bodyData: req.body,})
+    res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body})
 })
 
 app.post('/login', (req, res)=>{
