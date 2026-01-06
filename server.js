@@ -107,7 +107,7 @@ route.get('/login', (req, res)=>{
     })
 })
 
-let token = "12345"
+const token = "12345"
 const myToken = (req, res, next) => {
     if(res.token == ""){
         return res.send({
@@ -137,8 +137,11 @@ const Port = (8000)
 
 app.use(express.json)
 
+const Token = '123456'
+
 app.get('/news', (req, res)=>{
-    res.send({status: 1, msg: 'news page api'})
+    console.log(req.body)
+    res.send({status: 1, msg: 'news page api', bodyData: req.body,})
 })
 
 app.post('/login', (req, res)=>{
