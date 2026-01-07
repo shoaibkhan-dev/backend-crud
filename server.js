@@ -141,8 +141,11 @@ const Token = '123456'
 
 app.get('/news', (req, res)=>{
     console.log(req.body)
-    res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body})
+    res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body});
 })
+const myTokens = (req, res, next) =>{
+   return 
+}
 
 app.post('/login', (req, res)=>{
     res.send({status:1, msg: "login page api"})
@@ -150,4 +153,4 @@ app.post('/login', (req, res)=>{
 
 appss.listen(Port, ()=>{
     console.log("server is running on 8000")
-})
+});
