@@ -145,6 +145,9 @@ app.get('/news', (req, res)=>{
 })
 const myTokens = (req, res, next) =>{
    return 
+   res.send({status: 1,
+    message: "welcome"
+   })
 }
 
 app.post('/login', (req, res)=>{
