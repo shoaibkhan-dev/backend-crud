@@ -144,10 +144,12 @@ app.get('/news', (req, res)=>{
     res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body});
 })
 const myTokens = (req, res, next) =>{
-   return 
-   res.send({status: 1,
-    message: "welcome"
-   })
+   if(req.token == ""){
+    return ({
+        status:1,
+        msg: "welcome"
+    })
+   }
 }
 
 app.post('/login', (req, res)=>{
