@@ -153,7 +153,11 @@ const myTokens = (req, res, next) =>{
 }
 
 const currentToken = (req, res, next)=>{
-    
+    if(req.token == ""){
+        return ({
+            status:1, msg: "incorrect password"
+        })
+    }
 }
 
 app.post('/login', (req, res)=>{
