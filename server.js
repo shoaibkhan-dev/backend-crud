@@ -147,9 +147,13 @@ const myTokens = (req, res, next) =>{
    if(req.token == ""){
     return ({
         status:1,
-        msg: "welcome"
+        msg: "welcome "
     })
    }
+}
+
+const currentToken = (req, res, next)=>{
+    
 }
 
 app.post('/login', (req, res)=>{
