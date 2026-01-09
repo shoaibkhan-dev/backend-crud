@@ -164,6 +164,10 @@ app.post('/login', (req, res)=>{
     res.send({status:1, msg: "login page api"})
 })
 
+app.get('/product', (req, res)=>{
+    res.send({status:1, msg: "product page api"})
+})
+
 app.post('/news', (req, res)=>{
     res.send({status:1, msg: "login page api"})
 })
