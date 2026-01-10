@@ -169,8 +169,9 @@ app.get('/product', (req, res)=>{
 })
 
 app.post('/news', (req, res)=>{
-    res.send({status:1, msg: "login page api"})
-    console.log(msg)
+    req.body
+    res.send({status:1, msg: "login page api", bodyData: 'body data'})
+
 })
 
 appss.listen(Port, ()=>{
