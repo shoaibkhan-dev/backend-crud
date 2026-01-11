@@ -174,6 +174,17 @@ app.post('/news', (req, res)=>{
     console.log(req.body)
 })
 
+
+
 appss.listen(Port, ()=>{
     console.log("server is running on 8000")
 });
+
+const express = require('express');
+const appp = express();
+
+const PORTS = 1000;
+
+app.listen(PORTS, ()=>{
+    console.log("port is running on server 1000")
+})
