@@ -181,7 +181,18 @@ appss.listen(Port, ()=>{
 });
 
 const express = require('express');
+
 const appp = express();
+
+appp.use(express.json())
+
+appp.get('/login', (req, res)=>{
+    res.send({status:1, msg:"login page api"})
+})
+
+appp.post('/cart', (req, res)=>{
+    res.send({})
+})
 
 const PORTS = 1000;
 
