@@ -191,7 +191,7 @@ appp.get('/login', (req, res)=>{
 })
 
 appp.post('/cart', (req, res)=>{
-    res.send({})
+    res.send({status: 2, message: 'cart page api'})
 })
 
 const PORTS = 1000;
