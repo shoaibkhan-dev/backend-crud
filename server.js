@@ -198,4 +198,5 @@ const PORTS = 1000;
 
 app.listen(PORTS, ()=>{
     console.log("port is running on server 1000")
+    console.log(PORTS)
 })
