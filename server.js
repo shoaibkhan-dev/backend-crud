@@ -92,65 +92,65 @@ app.listen(port, ()=>{
     console.log('server is up on port to 5000');
 })
 
-const express = require('express');
-const route = express();
+// const express = require('express');
+// const route = express();
 
-route.use(express.json())
+// route.use(express.json())
 
-const PORT = 4000;
+// const PORT = 4000;
 
-route.get('/login', (req, res)=>{
-    console.log(req.body)
-    res.send({status:1, msg:"login page api",
-        bodyyData: req.body,
-        queryData: req.body
-    })
-})
+// route.get('/login', (req, res)=>{
+//     console.log(req.body)
+//     res.send({status:1, msg:"login page api",
+//         bodyyData: req.body,
+//         queryData: req.body
+//     })
+// })
 
-const token = "12345"
-const myToken = (req, res, next) => {
-    if(res.token == ""){
-        return res.send({
-            status:1, msg:'welcome'
-        })
-    }
-    next()
-}
-myToken.send({status:1})
+// const token = "12345"
+// const myToken = (req, res, next) => {
+//     if(res.token == ""){
+//         return res.send({
+//             status:1, msg:'welcome'
+//         })
+//     }
+//     next()
+// }
+// myToken.send({status:1})
 
-route.post('product', (req, res)=>{
-    res.send({status: 2, msg: 'product page api'})
-})
+// route.post('product', (req, res)=>{
+//     res.send({status: 2, msg: 'product page api'})
+// })
 
-route.listen(PORT, ()=>{
-    console.log('server is running on port 9000')
-});
+// route.listen(PORT, ()=>{
+//     console.log('server is running on port 9000')
+// });
 
-route.listen(9000);
+// route.listen(9000);
 
 
-const express = require('express');
+// const express = require('express');
 
-const appss = express()
+// const appss = express()
 
-const Port = (8000)
+// const Port = (8000)
 
-app.use(express.json)
+// app.use(express.json)
 
-const Token = '123456'
+// const Token = '123456'
 
-app.get('/news', (req, res)=>{
-    console.log(req.body)
-    res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body});
-})
-const myTokens = (req, res, next) =>{
-   if(req.token == ""){
-    return ({
-        status:1,
-        msg: "welcome "
-    })
-   }
-}
+// app.get('/news', (req, res)=>{
+//     console.log(req.body)
+//     res.send({status: 1, msg: 'news page api', bodyData: req.body, queryData: req.body});
+// })
+// const myTokens = (req, res, next) =>{
+//    if(req.token == ""){
+//     return ({
+//         status:1,
+//         msg: "welcome "
+//     })
+//    }
+// }
 
 const currentToken = (req, res, next)=>{
     if(req.token == ""){
@@ -200,4 +200,19 @@ const PORTS = 1000;
 app.listen(PORTS, ()=>{
     console.log("port is running on server 1000")
     console.log(PORTS)
+});
+
+
+const express = require ('express');
+const routes = express();
+routes.use(express.json())
+
+routes.get('/login', (req, res)=>{
+    res.send({status: 1, msg: 'login page api'})
+})
+
+const PORT = 3000;
+
+routes.listen(PORT, ()=>{
+    console.log("port is running on server 3000")
 })
