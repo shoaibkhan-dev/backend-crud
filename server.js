@@ -211,6 +211,10 @@ routes.get('/login', (req, res)=>{
     res.send({status: 1, msg: 'login page api'})
 })
 
+routes.post('/cart', (req, res)=>{
+    res.send({status: 1, msg: 'cart page api'})
+})
+
 const PORT = 3000;
 
 routes.listen(PORT, ()=>{
