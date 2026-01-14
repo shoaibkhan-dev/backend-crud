@@ -212,11 +212,12 @@ routes.get('/login', (req, res)=>{
 })
 
 routes.post('/cart', (req, res)=>{
+
     res.send({status: 1, msg: 'cart page api'})
 })
 
 routes.post('/product', (req, res)=>{
-    res.send({status: 1, msg: 'product page api'})
+    res.send({status: 1, msg: 'product page api', bodyData: 'welcome'})
     console.log(req)
 })
 
