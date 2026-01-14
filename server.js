@@ -217,6 +217,7 @@ routes.post('/cart', (req, res)=>{
 
 routes.post('/product', (req, res)=>{
     res.send({status: 1, msg: 'product page api'})
+    console.log(req)
 })
 
 const PORT = 3000;
