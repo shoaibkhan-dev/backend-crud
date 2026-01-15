@@ -224,5 +224,5 @@ routes.post('/product', (req, res)=>{
 const PORT = 3000;
 
 routes.listen(PORT, ()=>{
-    console.log("Port is running on server 3000")
+    console.log("Port is Running on server 3000")
 })
