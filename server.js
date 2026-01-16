@@ -218,11 +218,11 @@ routes.post('/cart', (req, res)=>{
 
 routes.post('/product', (req, res)=>{
     res.send({status: 1, msg: 'product page api', bodyData: 'welcome'})
-    console.log(bodyData)
+    console.log(req)
 })
 
 const PORT = 3000;
 
 routes.listen(PORT, ()=>{
-    console.log("Port is Running on server 3000")
+    console.log("port is running on server 3000")
 })
