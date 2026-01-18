@@ -223,7 +223,7 @@ routes.post('/product', (req, res)=>{
 
 routes.get('/logon', (req, res)=>{
     res.send({status: 1, msg: 'product page api', bodyData: 'welcome'})
-   console.log(length)
+   console.log(req)
 })
 
 const PORT = 3000;
