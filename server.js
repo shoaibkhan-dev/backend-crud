@@ -231,3 +231,15 @@ const PORT = 3000;
 routes.listen(PORT, ()=>{
     console.log("port is running on server 3000")
 })
+
+const express = require('express');
+
+const aapp = express();
+
+aapp.use(express.json())
+
+aapp.get('/login', (req, res)=>{
+    res.send({status: 1, msg:"login api"})
+})
+
+aapp.listen(9000)
