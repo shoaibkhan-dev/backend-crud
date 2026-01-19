@@ -242,6 +242,6 @@ aapp.get('/login', (req, res)=>{
     res.send({status: 1, msg:"login api"})
 })
 aapp.post('/cart', (req, res)=>{
-    
+    res.send()
 })
 aapp.listen(9000)
