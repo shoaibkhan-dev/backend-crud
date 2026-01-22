@@ -243,7 +243,7 @@ aapp.get('/login', (req, res)=>{
 })
 aapp.post('/cart', (req, res)=>{
     console.log(req.body)
-    res.send({status:1, msg: 'cart page apis', bodyData: "welcome"})
+    res.send({status:1, msg: 'cart page apis', bodyData: "welcome", queryData: ""})
 
 })
 aapp.listen(9000)
