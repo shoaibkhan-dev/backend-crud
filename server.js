@@ -247,3 +247,20 @@ aapp.post('/cart', (req, res)=>{
 
 })
 aapp.listen(9000)
+
+const express = require('express');
+
+const route = express();
+route.use(express.json())
+
+route.get('/login', (req, res)=>{
+    res.send({status: 1, msg: 'login page api'})
+})
+
+const ports = 1000;
+
+
+
+route.listen(ports, () =>{
+    console.log('port is running on server 1000')
+})
