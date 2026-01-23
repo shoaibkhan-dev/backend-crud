@@ -254,8 +254,10 @@ const route = express();
 route.use(express.json())
 
 route.get('/login', (req, res)=>{
-    res.send({status: 1, msg: 'login page api'})
+    res.send({status: 1, msg: 'login page apis'})
 })
+
+
 
 const ports = 1000;
 
