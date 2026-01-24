@@ -250,7 +250,7 @@ aapp.listen(9000)
 
 const express = require('express');
 
-const route = express();
+const route = express()
 route.use(express.json())
 
 route.get('/login', (req, res)=>{
