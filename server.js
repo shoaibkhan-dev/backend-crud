@@ -257,7 +257,9 @@ route.get('/login', (req, res)=>{
     res.send({status: 1, msg: 'login page apis'})
 })
 
-
+route.post('/product', (req, res)=>{
+    res.send({status: 1, msg: 'product page api'})
+})
 
 const ports = 1000;
 
